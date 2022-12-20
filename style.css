@@ -1,0 +1,8 @@
+.banner {
+    background-color: aqua;
+    background-image: url(https://adorn.qodeinteractive.com/wp-content/uploads/2017/05/slider-h5-img-3.jpg);
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

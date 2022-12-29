@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .banner {
     background-color: rgb(221, 153, 27);
     background-image: url(https://adorn.qodeinteractive.com/wp-content/uploads/2017/05/slider-h5-img-3.jpg);

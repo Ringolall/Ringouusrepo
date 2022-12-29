@@ -9,6 +9,64 @@ img {
     height: auto;
 }
 
+.desktop-only {
+    display: none;
+}
+
+.logo__img {
+    max-width: 85px;
+}
+
+.header--main {
+    padding: 36px 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1720px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.thumbnail {
+    margin-bottom: 30px;
+}
+
+button.burger-menu {
+    width: 31px;
+    border: none;
+    background: none;
+}
+
+.burger-menu span {
+    border: 1px solid #212121;
+    display: block;
+    margin: 5px 0;
+}
+
+.section {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.section--lg-padding {
+    padding-top: 52px;
+    padding-bottom: 64px;
+}
+
+.section--padding-top-none {
+    padding-top: 0;
+}
+
+.section--padding-bottom-lg {
+    padding-bottom: 85px;
+}
+
+.intro {
+    margin-bottom: 80px;
+}
+
 .banner {
     background-color: rgb(221, 153, 27);
     background-image: url(https://adorn.qodeinteractive.com/wp-content/uploads/2017/05/slider-h5-img-3.jpg);

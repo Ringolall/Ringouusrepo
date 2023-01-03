@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+
+/* see on html element */
+
+:root {
+    font-size: 65.5%;
+}
+
+body {
+    font-size: 1.7rem;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -14,17 +25,17 @@ img {
 }
 
 .logo__img {
-    max-width: 85px;
+    max-width: 8.5rem;
 }
 
 .header--main {
-    padding: 36px 0;
+    padding: 3.6rem 0;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    max-width: 1720px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: 172rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -34,7 +45,7 @@ img {
 }
 
 button.burger-menu {
-    width: 31px;
+    width: 3.1rem;
     border: none;
     background: none;
 }
@@ -45,14 +56,19 @@ button.burger-menu {
     margin: 5px 0;
 }
 
+h1.banner__heading {
+    font-size: 50px;
+    font-size: clamp(30px, 9vw, 50px);
+}
+
 .section {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
 }
 
 .section--lg-padding {
-    padding-top: 52px;
-    padding-bottom: 64px;
+    padding-top: 5.2rem;
+    padding-bottom: 6.4rem;
 }
 
 .section--padding-top-none {
@@ -60,17 +76,17 @@ button.burger-menu {
 }
 
 .section--padding-bottom-lg {
-    padding-bottom: 85px;
+    padding-bottom: 8.5rem;
 }
 
 .intro {
-    margin-bottom: 80px;
+    margin-bottom: 8rem;
 }
 
 .banner {
     background-color: rgb(221, 153, 27);
     background-image: url(https://adorn.qodeinteractive.com/wp-content/uploads/2017/05/slider-h5-img-3.jpg);
-    min-height: 800px;
+    min-height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

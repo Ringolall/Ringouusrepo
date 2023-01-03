@@ -20,6 +20,11 @@ img {
     height: auto;
 }
 
+
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+
 .desktop-only {
     display: none;
 }

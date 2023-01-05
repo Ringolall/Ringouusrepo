@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header class="header header--main">
+    <header class="header header--main header--fixed">
         <div class="container">
             <div class="row">
                 <div class="column">
@@ -23,11 +23,22 @@
                         <img class="logo__img" src="./img/logo-dark.png" alt="adorn logo" title="Adorni logo on siin">
                     </a>
                 </div>
-                <div class="column desktop-only">
-                    <nav class="menu menu--horisontal">
+                <div class="column">
+                    <nav class="menu menu--horisontal menu--caps">
                         <ul class="menu__list">
                             <li class="menu__list-item"><a href="#">Home</a></li>
-                            <li class="menu__list-item"><a href="#">Shop</a></li>
+                            <li class="menu__list-item"><a href="#">Shop</a>
+                                <div class="menu__dropdown">
+                                    <ul class="menu__list">
+                                        <li class="menu__list-item"><a href="#">Home</a></li>
+                                        <li class="menu__list-item"><a href="#">Shop</a></li>
+                                        <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                                        <li class="menu__list-item"><a href="#">blog</a></li>
+                                        <li class="menu__list-item"><a href="#">Element</a></li>
+                                        <li class="menu__list-item"><a href="#">Pages</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="menu__list-item"><a href="#">Lookbook</a></li>
                             <li class="menu__list-item"><a href="#">blog</a></li>
                             <li class="menu__list-item"><a href="#">Element</a></li>
@@ -46,16 +57,25 @@
                 <div class="column small-screen-only">
                     <nav class="menu">
                         <button class="burger-menu">
-                            <span>
-                                
-                            </span>
-                            <span>
-                                                                
-                            </span>
-                            <span>
-                                                                
-                            </span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </button>
+                        <div class="fixed-sidebar">
+                            <div class="text-align-right">
+                                <span class=" close-button lnr lnr-cross"></span>
+                            </div>
+                            <nav class="menu menu--caps">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item"><a href="#">Home</a></li>
+                                    <li class="menu__list-item"><a href="#">Shop</a></li>
+                                    <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                                    <li class="menu__list-item"><a href="#">blog</a></li>
+                                    <li class="menu__list-item"><a href="#">Element</a></li>
+                                    <li class="menu__list-item"><a href="#">Pages</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </nav>
                 </div>
             </div>

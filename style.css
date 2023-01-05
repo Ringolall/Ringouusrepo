@@ -34,7 +34,7 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 .header--main {
-    padding: 3.6rem 0;
+    padding: 3.6rem 0 0;
 }
 
 .container {
@@ -43,6 +43,10 @@ font-family: 'Ubuntu', sans-serif; */
     max-width: 172rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 .thumbnail {
@@ -86,6 +90,86 @@ h1.banner__heading {
 
 .intro {
     margin-bottom: 8rem;
+}
+
+.header--fixed {
+    position: fixed;
+    background-color: #8a2be25e;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.fixed-sidebar {
+    position: fixed;
+    background: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 3rem 7rem;
+    display: none;
+}
+
+.menu--caps {
+    text-transform: uppercase;
+}
+
+.menu__list-item {
+    position: relative;
+}
+
+.menu__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.menu__dropdown {
+    position: absolute;
+    top: 100%;
+    left: -1.8rem;
+    background-color: white;
+    padding: 1.9rem;
+}
+
+.menu__list {
+    list-style-type: none;
+}
+
+.menu__list-item a {
+    padding: 0 1.8rem;
+}
+
+.menu--horisontal>.menu__list {
+    display: flex;
+}
+
+.back-to-the-top {
+    position: fixed;
+    bottom: 3rem;
+    right: -6rem;
+    transform: rotateZ(270deg);
+    transform-origin: left;
+    z-index: 1;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.close-button {
+    font-size: 2.5rem;
+}
+
+.thumbnail__hower-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255 255 255 / 70%);
 }
 
 .banner {

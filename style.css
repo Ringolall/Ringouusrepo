@@ -94,7 +94,7 @@ h1.banner__heading {
 
 .header--fixed {
     position: fixed;
-    background-color: #8a2be25e;
+    background-color: #ffffff;
     left: 0;
     right: 0;
     top: 0;
@@ -123,12 +123,6 @@ h1.banner__heading {
 .menu__dropdown {
     position: absolute;
     top: 100%;
-    left: 0;
-}
-
-.menu__dropdown {
-    position: absolute;
-    top: 100%;
     left: -1.8rem;
     background-color: white;
     padding: 1.9rem;
@@ -144,6 +138,10 @@ h1.banner__heading {
 
 .menu--horisontal>.menu__list {
     display: flex;
+}
+
+.menu--dropdown-menu>.menu__list>.menu__list-item {
+    padding-bottom: 3.6rem;
 }
 
 .back-to-the-top {

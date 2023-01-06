@@ -15,9 +15,25 @@ body {
     font-size: 1.7rem;
 }
 
+::selection {
+    background-color: black;
+    color: white;
+}
+
 img {
     max-width: 100%;
     height: auto;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
 }
 
 
@@ -109,11 +125,12 @@ h1.banner__heading {
     top: 0;
     bottom: 0;
     padding: 3rem 7rem;
-    display: none;
+    /* display: none; */
 }
 
 .menu--caps {
     text-transform: uppercase;
+    FONT-SIZE: 1.5rem;
 }
 
 .menu__list-item {
@@ -126,6 +143,14 @@ h1.banner__heading {
     left: -1.8rem;
     background-color: white;
     padding: 1.9rem;
+    display: none;
+}
+
+.menu__has-sub::after {
+    content: "\e876";
+    font-family: "Linearicons-Free";
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .menu__list {
@@ -134,6 +159,8 @@ h1.banner__heading {
 
 .menu__list-item a {
     padding: 0 1.8rem;
+    padding: 0.5rem 1.8rem;
+    display: inline-block;
 }
 
 .menu--horisontal>.menu__list {
@@ -168,6 +195,11 @@ h1.banner__heading {
     bottom: 0;
     left: 0;
     background-color: rgb(255 255 255 / 70%);
+    opacity: 0;
+}
+
+.thumbnail:hover .thumbnail__hower-text {
+    opacity: 1;
 }
 
 .banner {

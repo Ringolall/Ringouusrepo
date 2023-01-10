@@ -125,7 +125,20 @@ h1.banner__heading {
     top: 0;
     bottom: 0;
     padding: 3rem 7rem;
-    /* display: none; */
+    transform: translateX(100%);
+    transition: transform 0.7s ease;
+}
+
+.fixed-sidebar--active {
+    transform: translateX(0);
+}
+
+.light-gray-text {
+    color: #d2d2d2;
+}
+
+.light-gray-text a:hover {
+    color: #888;
 }
 
 .menu--caps {
@@ -133,7 +146,23 @@ h1.banner__heading {
     FONT-SIZE: 1.5rem;
 }
 
-.menu__list-item {
+.menu a {
+    color: #888;
+}
+
+.menu--light-gray a {
+    color: #d2d2d2;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.menu--light-gray a:hover {
+    color: #888;
+}
+
+.menu__list-item a {
     position: relative;
 }
 
@@ -146,11 +175,15 @@ h1.banner__heading {
     display: none;
 }
 
-.menu__has-sub::after {
+.menu__has-sub>a::after {
     content: "\e876";
     font-family: "Linearicons-Free";
     font-size: 0.9rem;
     font-weight: bold;
+    position: absolute;
+    top: 0.5rem;
+    line-height: 1.7rem;
+    right: 0;
 }
 
 .menu__list {
@@ -196,6 +229,7 @@ h1.banner__heading {
     left: 0;
     background-color: rgb(255 255 255 / 70%);
     opacity: 0;
+    transition: opacity 0.32s ease;
 }
 
 .thumbnail:hover .thumbnail__hower-text {

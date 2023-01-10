@@ -61,6 +61,32 @@ font-family: 'Ubuntu', sans-serif; */
     margin-left: auto;
 }
 
+.banner__text-container {
+    max-width: 800rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-row--direction-column {
+    flex-direction: column;
+}
+
+.flex-row--align-center {
+    align-items: center;
+}
+
+.flex-row--justify-center {
+    justify-content: center;
+}
+
+.flex-row--justify-space-between {
+    justify-content: space-between;
+}
+
 .text-align-right {
     text-align: right;
 }
@@ -230,6 +256,10 @@ h1.banner__heading {
     background-color: rgb(255 255 255 / 70%);
     opacity: 0;
     transition: opacity 0.32s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .thumbnail:hover .thumbnail__hower-text {
@@ -243,4 +273,13 @@ h1.banner__heading {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.banner__anchor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }

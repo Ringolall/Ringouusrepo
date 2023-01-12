@@ -87,12 +87,21 @@ font-family: 'Ubuntu', sans-serif; */
     justify-content: space-between;
 }
 
-.text-align-right {
-    text-align: right;
+.product-thumbnails,
+.footer-row--grid {
+    display: grid;
 }
 
-.thumbnail {
-    margin-bottom: 30px;
+.gap-sm {
+    gap: 3rem;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 button.burger-menu {
@@ -247,6 +256,10 @@ h1.banner__heading {
     font-size: 2.5rem;
 }
 
+.thumbnail__img {
+    display: block;
+}
+
 .thumbnail__hower-text {
     position: absolute;
     top: 0;
@@ -282,4 +295,31 @@ h1.banner__heading {
     right: 0;
     left: 0;
     bottom: 0;
+}
+
+@media screen and (min-width:650px) {
+    .product-thumbnails {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .footer-row--grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-row--flex {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .small-screen-only {
+        display: none;
+    }
+    .desktop-only {
+        display: block;
+    }
+    .product-thumbnails {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

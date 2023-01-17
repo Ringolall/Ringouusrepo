@@ -7,6 +7,8 @@
         
          :root {
             font-size: 65.5%;
+            --lightgray: #d2d2d2;
+            --gray: #888;
         }
         
         body {
@@ -175,11 +177,11 @@ font-family: 'Ubuntu', sans-serif; */
         }
         
         .light-gray-text {
-            color: #d2d2d2;
+            color: var(--lightgray);
         }
         
         .light-gray-text a:hover {
-            color: #888;
+            color: var(--gray);
         }
         
         .menu--caps {
@@ -188,11 +190,11 @@ font-family: 'Ubuntu', sans-serif; */
         }
         
         .menu a {
-            color: #888;
+            color: var(--gray);
         }
         
         .menu--light-gray a {
-            color: #d2d2d2;
+            color: var(--lightgray);
         }
         
         .menu a:hover {
@@ -200,7 +202,7 @@ font-family: 'Ubuntu', sans-serif; */
         }
         
         .menu--light-gray a:hover {
-            color: #888;
+            color: var(--gray);
         }
         
         .menu__list-item a {

@@ -40,7 +40,7 @@
         h2 {
             font-weight: 300;
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 3rem;
         }
         
         h3 {
@@ -229,10 +229,6 @@ font-family: 'Ubuntu', sans-serif; */
             color: var(--gray);
         }
         
-        .menu__list-item a {
-            position: relative;
-        }
-        
         .menu__dropdown {
             position: absolute;
             top: 100%;
@@ -258,9 +254,13 @@ font-family: 'Ubuntu', sans-serif; */
         }
         
         .menu__list-item a {
-            padding: 0 1.8rem;
-            padding: 0.5rem 1.8rem;
             display: inline-block;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .menu--horisontal a {
+            padding: 0.5rem 1.8rem;
         }
         
         .menu--horisontal>.menu__list {

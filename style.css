@@ -269,6 +269,7 @@ font-family: 'Ubuntu', sans-serif; */
         
         .menu--dropdown-menu>.menu__list>.menu__list-item {
             padding-bottom: 3.6rem;
+            position: relative;
         }
         
         .back-to-the-top {

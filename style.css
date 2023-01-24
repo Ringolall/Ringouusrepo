@@ -78,6 +78,8 @@ font-family: 'Ubuntu', sans-serif; */
         
         .header--main {
             padding: 3.6rem 0;
+            position: relative;
+            z-index: 44;
         }
         
         .container {
@@ -182,6 +184,8 @@ font-family: 'Ubuntu', sans-serif; */
             right: 0;
             top: 0;
             z-index: 2;
+            position: relative;
+            display: none;
         }
         
         .fixed-sidebar {
@@ -230,6 +234,10 @@ font-family: 'Ubuntu', sans-serif; */
         }
         
         .menu__dropdown {
+            display: none;
+        }
+        
+        .menu--horisontal .menu__dropdown {
             position: absolute;
             top: 100%;
             left: -1.8rem;
@@ -238,15 +246,15 @@ font-family: 'Ubuntu', sans-serif; */
             display: none;
         }
         
-        .menu__has-sub>a::after {
+        .fixed-sidebar .menu__has-sub>a::after {
             content: "\e876";
             font-family: "Linearicons-Free";
             font-size: 0.9rem;
             font-weight: bold;
             position: absolute;
-            top: 0.5rem;
+            top: 0.3rem;
             line-height: 1.7rem;
-            right: 0;
+            right: -1rem;
         }
         
         .menu__list {
@@ -257,6 +265,10 @@ font-family: 'Ubuntu', sans-serif; */
             display: inline-block;
             position: relative;
             padding: 0.5rem 0;
+        }
+        
+        .fixed-sidebar a {
+            padding-right: 1rem;
         }
         
         .menu--horisontal a {

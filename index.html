@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header header--main header--fixed">
+    <header class="header header--main">
         <div class="container">
             <div class="flex-row flex-row--justify-space-between">
                 <div class="column">
@@ -27,7 +27,99 @@
                     <nav class="menu menu--horisontal menu--caps menu--dropdown-menu">
                         <ul class="menu__list">
                             <li class="menu__list-item"><a href="#">Home</a></li>
-                            <li class="menu__list-item"><a href="#">Shop</a>
+                            <li class="menu__list-item menu__has-sub">
+                                <a href="#">Shop</a>
+                                <div class="menu__dropdown">
+                                    <ul class="menu__list">
+                                        <li class="menu__list-item"><a href="#">Home</a></li>
+                                        <li class="menu__list-item"><a href="#">Shop</a></li>
+                                        <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                                        <li class="menu__list-item"><a href="#">blog</a></li>
+                                        <li class="menu__list-item"><a href="#">Element</a></li>
+                                        <li class="menu__list-item"><a href="#">Pages</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                            <li class="menu__list-item"><a href="#">blog</a></li>
+                            <li class="menu__list-item"><a href="#">Element</a></li>
+                            <li class="menu__list-item"><a href="#">Pages</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column desktop-only">
+                    <nav class="menu menu--horisontal">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#">Sign in</a></li>
+                            <li class="menu__list-item"><a href="#">Cart(0)</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column small-screen-only">
+                    <nav class="menu menu--caps">
+                        <button class="burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="fixed-sidebar">
+                            <div class="text-align-right">
+                                <span class=" close-button lnr lnr-cross"></span>
+                            </div>
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item menu__has-sub">
+                                        <a href="#">Home</a>
+                                        <div class="menu__dropdown">
+                                            <ul class="menu__list">
+                                                <li class="menu__list-item"><a href="#">Home</a></li>
+                                                <li class="menu__list-item"><a href="#">Shop</a></li>
+                                                <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                                                <li class="menu__list-item"><a href="#">blog</a></li>
+                                                <li class="menu__list-item"><a href="#">Element</a></li>
+                                                <li class="menu__list-item"><a href="#">Pages</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu__list-item menu__has-sub"><a href="#">Shop</a>
+                                        <div class="menu__dropdown">
+                                            <ul class="menu__list">
+                                                <li class="menu__list-item"><a href="#">Home</a></li>
+                                                <li class="menu__list-item"><a href="#">Shop</a></li>
+                                                <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                                                <li class="menu__list-item"><a href="#">blog</a></li>
+                                                <li class="menu__list-item"><a href="#">Element</a></li>
+                                                <li class="menu__list-item"><a href="#">Pages</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu__list-item"><a href="#">Lookbook</a></li>
+                                    <li class="menu__list-item"><a href="#">blog</a></li>
+                                    <li class="menu__list-item"><a href="#">Element</a></li>
+                                    <li class="menu__list-item"><a href="#">Pages</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header header--main header--fixed">
+        <div class="container">
+            <div class="flex-row flex-row--justify-space-between">
+                <div class="column">
+                    <a class="logo" href="http://adorn.qodeinteractive.com/classic-shop-light/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo__img" src="./img/logo-dark.png" alt="adorn logo" title="Adorni logo on siin">
+                    </a>
+                </div>
+                <div class="column desktop-only">
+                    <nav class="menu menu--horisontal menu--caps menu--dropdown-menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#">Home</a></li>
+                            <li class="menu__list-item menu__has-sub">
+                                <a href="#">Shop</a>
                                 <div class="menu__dropdown">
                                     <ul class="menu__list">
                                         <li class="menu__list-item"><a href="#">Home</a></li>
@@ -119,7 +211,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <div class="row product-thumbnails gap-sm">
+                <div id="scrollto" class="row product-thumbnails gap-sm">
                     <div class="column">
                         <div class="thumbnail thumbnail--product">
                             <img class="thumbnail__img" src="https://adorn.qodeinteractive.com/wp-content/uploads/2017/04/h5-product-1.jpg" alt="product image">
